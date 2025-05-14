@@ -93,7 +93,7 @@ export default function Collections() {
               </tr>
             </thead>
             <tbody>
-              {collections.map((collection) => (
+          {collections.map((collection) => (
                 <tr key={collection.id} className="bg-white border-b hover:bg-gray-50 transition">
                   <td className="py-3 px-4 align-top font-medium text-gray-900">{collection.info.name}</td>
                   <td className="py-3 px-4 align-top">
@@ -112,7 +112,7 @@ export default function Collections() {
                   <td className="py-3 px-4 align-top text-gray-900">Satış Kanalı - {collection.salesChannelId || '-'}</td>
                   <td className="py-3 px-4 align-top">
                     <button
-                      onClick={() => router.push(`/collections/${collection.id}`)}
+              onClick={() => router.push(`/collections/${collection.id}`)}
                       className="p-2 rounded hover:bg-gray-100 transition"
                       title="Sabitleri düzenle"
                     >

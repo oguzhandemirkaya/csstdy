@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="tr">
       <body className={`${inter.variable} antialiased`}>
         <ReduxProvider>
-          <AuthProvider>{children}</AuthProvider>
+        <AuthProvider>{children}</AuthProvider>
         </ReduxProvider>
       </body>
     </html>
